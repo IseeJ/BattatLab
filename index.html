@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battat Lab</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Montserrat:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="siteIMG/IzeeCon.PNG">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <!--img 
+  src="icon.gif" 
+  alt="Icon" 
+  class="header-icon" 
+  id="headerIcon" 
+  onclick="hitGif()" 
+  onmouseover="pauseGif()" 
+  onmouseleave="playGif()"
+        -->
+
+        <img src="IMG/header.PNG"   class="header-icon" id="headerIcon" >
+            <h1>Battat Lab</h1>
+            <ul>
+                <li><a href="#about" onclick="showTab('about')">About</a></li>
+                <li><a href="#research" onclick="showTab('research')">Research</a></li>
+                <li><a href="#people" onclick="showTab('people')">Our Team</a></li>
+                <li><a href="#photos" onclick="showTab('photos')">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+    <audio id="clickSound" src="click.mp3"></audio>
+
+    <main>
+        <section id="about" class="tab-content">
+            <div class="p-container">
+                <h2>Neutrino Detection and Particle Astrophysics</h2>
+                <ul class="p-content">
+                    Our Universe is fascinating and mysterious. Through different lenses, we each try to make sense of it all. In my lab, we focus on particle astrophysics, and use (and develop new) experimental techniques to make precision measurements of neutrino properties, search for dark matter particles, and test Einstein’s theory of General Relativity via lunar laser ranging.
+                    We are always looking for interested and motivated students to join our group. No prior experience is necessary. In fact, we encourage students to get involved early. There are plenty of ways you can engage in this research and contribute to these fascinating topics whether you are a first year student, or are looking for a senior thesis project.
+                    Through this research, you can gain experience in many areas including electronics development, vacuum systems, computational methods, high voltage systems, lasers and more!
+                </ul>  
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section id="people" class="tab-content" style="display:none;">
+            <div class="people-container">
+                <div class="person-card" onclick="showTab('james-profile')" style="background-color: var(--color7);">
+                    <img src="IMG/Team/user.PNG">
+                    <h3>James Battat</h3>
+                    <p>Professor</p>
+                    <ul class="socials">
+                        <li><a href="mailto:wj100@wellesley.edu" target="_blank" onclick="event.stopPropagation();"><i class="fas fa-envelope"></i></a></li>
+                    </ul>
+                </div>
+                <div class="person-card" onclick="showTab('wenzhao-profile')" style="background-color: var(--color7);">
+                    <img src="IMG/Team/user.PNG">
+                    <h3>Wenzhao Wei</h3>
+                    <p>Researcher</p>
+                    <ul class="socials">
+                        <li><a href="mailto:wj100@wellesley.edu" target="_blank" onclick="event.stopPropagation();"><i class="fas fa-envelope"></i></a></li>
+                    </ul>
+                </div>
+                <div class="person-card" onclick="showTab('spencer-profile')">
+                    <img src="IMG/Team/user.PNG">
+                    <h3>Spencer Dockal</h3>
+                    <p>Post Bac</p>
+                    <ul class="socials">
+                        <li><a href="mailto:wj100@wellesley.edu" target="_blank" onclick="event.stopPropagation();"><i class="fas fa-envelope"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/iseewj/" target="_blank" onclick="event.stopPropagation();"><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href="https://github.com/IseeJ" target="_blank" onclick="event.stopPropagation();"><i class="fab fa-github"></i></a></li>
+                    </ul>
+                </div>
+                <div class="person-card">
+                    <img src="IMG/Team/user.PNG" onclick="showTab('isee-profile')">
+                    <h3>1</h3>
+                    <p>Undergraduate Student</p>
+                    <ul class="socials">
+                        <li><a href="mailto:wj100@wellesley.edu" target="_blank" onclick="event.stopPropagation();"><i class="fas fa-envelope"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/iseewj/" target="_blank" onclick="event.stopPropagation();"><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href="https://github.com/IseeJ" target="_blank" onclick="event.stopPropagation();"><i class="fab fa-github"></i></a></li>
+                    </ul>
+                </div>
+                <div class="person-card">
+                    <img src="IMG/Team/user.PNG" onclick="showTab('isee-profile')">
+                    <h3>2</h3>
+                    <p>Undergraduate Student</p>
+                    <ul class="socials">
+                        <li><a href="mailto:wj100@wellesley.edu" target="_blank" onclick="event.stopPropagation();"><i class="fas fa-envelope"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/iseewj/" target="_blank" onclick="event.stopPropagation();"><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href="https://github.com/IseeJ" target="_blank" onclick="event.stopPropagation();"><i class="fab fa-github"></i></a></li>
+                    </ul>
+                </div>
+                <div class="person-card">
+                    <img src="IMG/Team/user.PNG" onclick="showTab('isee-profile')">
+                    <h3>3</h3>
+                    <p>Undergraduate Student</p>
+                    <ul class="socials">
+                        <li><a href="mailto:wj100@wellesley.edu" target="_blank" onclick="event.stopPropagation();"><i class="fas fa-envelope"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/iseewj/" target="_blank" onclick="event.stopPropagation();"><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href="https://github.com/IseeJ" target="_blank" onclick="event.stopPropagation();"><i class="fab fa-github"></i></a></li>
+                    </ul>
+                </div>
+                <div class="person-card">
+                    <img src="IMG/Team/user.PNG" onclick="showTab('isee-profile')">
+                    <h3>4</h3>
+                    <p>Undergraduate Student</p>
+                    <ul class="socials">
+                        <li><a href="mailto:wj100@wellesley.edu" target="_blank" onclick="event.stopPropagation();"><i class="fas fa-envelope"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/iseewj/" target="_blank" onclick="event.stopPropagation();"><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href="https://github.com/IseeJ" target="_blank" onclick="event.stopPropagation();"><i class="fab fa-github"></i></a></li>
+                    </ul>
+                </div>
+                <div class="person-card">
+                    <img src="IMG/Team/user.PNG" onclick="showTab('isee-profile')">
+                    <h3>5</h3>
+                    <p>Undergraduate Student</p>
+                    <ul class="socials">
+                        <li><a href="mailto:wj100@wellesley.edu" target="_blank" onclick="event.stopPropagation();"><i class="fas fa-envelope"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/iseewj/" target="_blank" onclick="event.stopPropagation();"><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href="https://github.com/IseeJ" target="_blank" onclick="event.stopPropagation();"><i class="fab fa-github"></i></a></li>
+                    </ul>
+                </div>
+                
+            </div>
+        </section>
+        <!--profile pages-->
+        <section id="james-profile" class="tab-content" style="display:none;">
+            <span class="back-arrow" onclick="showTab('people')">&#8592; Back</span>
+            <div class="p-container" style="background-color: #f9f9f9;">
+                <img src="user.PNG" alt="James Battat">
+                <h2>James Battat</h2>
+                <p>Description</p>
+            </div>
+        </section>
+        <section id="wenzhao-profile" class="tab-content" style="display:none;">
+            <span class="back-arrow" onclick="showTab('people')">&#8592; Back</span>
+            <div class="p-container" style="background-color: #f9f9f9;">
+                <img src="user.PNG" alt="James Battat">
+                <h2>Wenzhao Wei</h2>
+                <p>Description</p>
+            </div>
+        </section>
+        <section id="spencer-profile" class="tab-content" style="display:none;">
+            <span class="back-arrow" onclick="showTab('people')">&#8592; Back</span>
+            <div class="p-container" style="background-color: #f9f9f9;">
+                <img src="user.PNG" alt="James Battat">
+                <h2>Spencer Dockal</h2>
+                <p>Description</p>
+            </div>
+        </section>
+        <section id="isee-profile" class="tab-content" style="display:none;">
+            <span class="back-arrow" onclick="showTab('people')">&#8592; Back</span>
+            <div class="p-container" style="background-color: #f9f9f9;">
+                <img src="user.PNG" alt="James Battat">
+                <h2>I-see Warisa Jaidee</h2>
+                <p>Description</p>
+            </div>
+        </section>
+
+        
+
+        <!-- Research Section -->
+        <section id="research" class="tab-content" style="display:none;">
+            <div class="p-container">
+                <h2>Q-Pix Consortium</h2>
+                <ul class="p-content">
+                    <a href="https://www.qpix.work/" target="_blank" rel="noopener noreferrer">
+                        Learn More
+                    </a>
+                </ul>  
+            </div>
+            <br>
+            <div class="p-container">
+                <h2>Projects</h2>
+                <ul class="p-content">
+                    <!--a onclick="showTab('isee-profile')">hey</a-->
+                </ul>  
+            </div>
+        </section>
+
+
+
+
+        <!-- Photos Section -->
+        <section id="photos" class="tab-content" style="display:none;">
+            <div class="gallery5">
+                <div class="gallery-item">
+                    <a href="IMG/Gallery/1.JPG" target="_blank">
+                        <img src="IMG/Gallery/1.JPG" alt="Caption" class="zoom-image">
+                    </a>
+                    <p>Caption</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="siteIMG/Art/A3.png" onclick = "openInNewTab('https://www.instagram.com/p/CqG0ABIu4Qt/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==')">
+                    <p>Caption</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="siteIMG/Art/A2.png">
+                    <p>Caption</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="siteIMG/Art/A13.png" onclick= "openInNewTab('https://www.instagram.com/p/Cq28JIaOrJR/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==')">
+                    <p>Caption</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <ul class="socials">
+            <li><a href="mailto:wj100@wellesley.edu" target="_blank"><i class="fas fa-envelope"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/iseewj/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="https://github.com/IseeJ" target="_blank"><i class="fab fa-github"></i></a></li>
+        </ul>
+        <p>Wellesley College | 21 Wellesley College Rd, 02481 MA</p>
+        <p>&copy; 2024 Battat Lab</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            showTab('research'); 
+        });
+
+    function showTab(tabName) {
+        event.preventDefault();
+
+        const tabs = document.querySelectorAll('.tab-content');
+        tabs.forEach(tab => {
+        tab.style.display = 'none';
+        });
+
+        const selectedTab = document.getElementById(tabName);
+        selectedTab.style.display = 'block';
+
+        const navLinks = document.querySelectorAll('nav a');
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+        });
+        const activeLink = document.querySelector(`nav a[href="#${tabName}"]`);
+        activeLink.classList.add('active');
+        }
+
+        function highlightActiveTab(activeTab) {
+            const links = document.querySelectorAll('nav a');
+            links.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').substring(1) === activeTab) {
+                    link.classList.add('active');
+                }
+            });
+        }
+
+        const gallery = document.querySelector('.scrolling-gallery');
+
+        gallery.addEventListener('mouseover', () => {
+            gallery.style.animationPlayState = 'paused';
+        });
+
+        gallery.addEventListener('mouseout', () => {
+            gallery.style.animationPlayState = 'running';
+        });
+
+        function openInNewTab(imageSrc) {
+            window.open(imageSrc, '_blank');
+        }
+
+        function pauseGif() {
+    document.getElementById('headerIcon').src = 'icon.png';
+}
+
+function playGif() {
+    document.getElementById('headerIcon').src = 'icon.gif';
+}
+
+function hitGif() {
+    document.getElementById('headerIcon').src = 'icon2.gif';
+}
+
+
+
+
+
+
+    </script>
+</body>
+</html>
+
+
+
+
+
