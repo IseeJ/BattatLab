@@ -27,7 +27,7 @@
             <h1>Battat Lab</h1>
             <ul>
                 <li><a href="#about" onclick="showTab('about')">About</a></li>
-                <li><a href="#research" onclick="showTab('research')">Research</a></li>
+                <li><a href="#research" onclick="showTab('research')">Projects</a></li>
                 <li><a href="#people" onclick="showTab('people')">Our Team</a></li>
                 <li><a href="#photos" onclick="showTab('photos')">Gallery</a></li>
             </ul>
@@ -40,15 +40,70 @@
             <div class="p-container">
                 <h2>Neutrino Detection and Particle Astrophysics</h2>
                 <ul class="p-content">
-                    Our Universe is fascinating and mysterious. Through different lenses, we each try to make sense of it all. In my lab, we focus on particle astrophysics, and use (and develop new) experimental techniques to make precision measurements of neutrino properties, search for dark matter particles, and test Einstein’s theory of General Relativity via lunar laser ranging.
-                    We are always looking for interested and motivated students to join our group. No prior experience is necessary. In fact, we encourage students to get involved early. There are plenty of ways you can engage in this research and contribute to these fascinating topics whether you are a first year student, or are looking for a senior thesis project.
-                    Through this research, you can gain experience in many areas including electronics development, vacuum systems, computational methods, high voltage systems, lasers and more!
+                    Our Universe is fascinating and mysterious. Through different lenses, we each try to make sense of it all. 
+                    In our lab, we focus on particle astrophysics, and use (and develop new) experimental techniques to make precision measurements of neutrino properties. 
+                    Our current focus is on the development of lab-scale liquid argon time projection chamber to support the Q-Pix consortium's development of pixelated readout technology for neutrino detection.
+                </ul>  
+            </div>
+            <br>
+
+
+            <div class="p-container">
+                <h2>Neutrino</h2>
+                <ul class="p-content">
+                    Neutrinos are the most abundant elementary particles with mass in the Universe (trillions of them passed through us per second!).
+                    They come from many sources for example, from the nuclear fusion of the Sun, during supernova explosions, in the Earth’s atmosphere when cosmic rays enters, and in nuclear reactors. 
+                    Some neutrinos may even come from the Big Bang, making them some of the oldest messengers in the Universe!
+
+                    In the Standard Model of particle physics (our best guide to understanding tiny particles), neutrinos belong to a family called leptons. That means they don’t take part in the strong force, which is the force that holds atomic nuclei together.
+                    Neutrinos are electrically neutral, extremely light, and don’t interact much with other matter — kind of like cosmic ghosts. That’s why they’re so hard to detect, and we are still trying to uncover their secrets!
+                    <div style="max-width: 100%; overflow: hidden; text-align: center;">
+                        <img src="IMG/About/nu.png" alt="neutrinos" style="width: 100%; max-width: 600px; height: auto; border-radius: 10px;" />
+                    </div>
+                </ul>  
+            </div>
+            <br>
+
+
+            <div class="p-container">
+                <h2>Q-Pix Consortium</h2>
+                <ul class="p-content">
+                    <a href="https://www.qpix.work/" target="_blank" rel="noopener noreferrer">
+                        Learn More
+                    </a>
                 </ul>  
             </div>
         </section>
 
         <!-- Team Section -->
-        <section id="people" class="tab-content" style="display:none;">
+        <section id="people" class="tab-content" style="display:none;" >
+            <div class="p-container" style="background-color: var(--color0);">
+                <ul class="p-content">
+                    We are always looking for interested and motivated students to join our group. No prior experience is necessary. In fact, we encourage students to get involved early. There are plenty of ways you can engage in this research and contribute to these fascinating topics whether you are a first year student, or are looking for a senior thesis project.
+                    Through this research, you can gain experience in many areas including electronics development, vacuum systems, computational methods, high voltage systems, lasers and more!
+                </ul>  
+            </div>   
+              
+
+              <div class="auto-slider">
+                <div class="slider-track">
+                  <div class="image-box">
+                    <img src="IMG/Team/1.png" alt="Image 1">
+                    <div class="tooltip">Julia Sherman '25, Eunice Beato '23, Nora Hoch '22, I-see Jaidee '25, Talia O'Shea '23, James Battat</div>
+                  </div>
+                  <div class="image-box">
+                    <img src="IMG/Team/2.png" alt="Image 2">
+                    <div class="tooltip">Spencer Dockal '24, I-see Jaidee '25, Genevieve Bui '27, Wenzhao Wei, James Battat</div>
+                  </div>
+                  <div class="image-box">
+                    <img src="IMG/Team/3.png" alt="Image 3">
+                    <div class="tooltip">Current Team (2025)!!</div>
+                  </div>
+                  <!-- Add more image-boxes as needed -->
+                </div>
+              </div>
+              
+            <br>
             <div class="people-container">
                 <div class="person-card" onclick="showTab('james-profile')" style="background-color: var(--color7);">
                     <img src="IMG/Team/user.PNG">
@@ -72,8 +127,6 @@
                     <p>Post Bac</p>
                     <ul class="socials">
                         <li><a href="mailto:wj100@wellesley.edu" target="_blank" onclick="event.stopPropagation();"><i class="fas fa-envelope"></i></a></li>
-                        <li><a href="https://www.linkedin.com/in/iseewj/" target="_blank" onclick="event.stopPropagation();"><i class="fab fa-linkedin"></i></a></li>
-                        <li><a href="https://github.com/IseeJ" target="_blank" onclick="event.stopPropagation();"><i class="fab fa-github"></i></a></li>
                     </ul>
                 </div>
                 <div class="person-card">
@@ -82,8 +135,6 @@
                     <p>Undergraduate Student</p>
                     <ul class="socials">
                         <li><a href="mailto:wj100@wellesley.edu" target="_blank" onclick="event.stopPropagation();"><i class="fas fa-envelope"></i></a></li>
-                        <li><a href="https://www.linkedin.com/in/iseewj/" target="_blank" onclick="event.stopPropagation();"><i class="fab fa-linkedin"></i></a></li>
-                        <li><a href="https://github.com/IseeJ" target="_blank" onclick="event.stopPropagation();"><i class="fab fa-github"></i></a></li>
                     </ul>
                 </div>
                 <div class="person-card">
@@ -92,8 +143,6 @@
                     <p>Undergraduate Student</p>
                     <ul class="socials">
                         <li><a href="mailto:wj100@wellesley.edu" target="_blank" onclick="event.stopPropagation();"><i class="fas fa-envelope"></i></a></li>
-                        <li><a href="https://www.linkedin.com/in/iseewj/" target="_blank" onclick="event.stopPropagation();"><i class="fab fa-linkedin"></i></a></li>
-                        <li><a href="https://github.com/IseeJ" target="_blank" onclick="event.stopPropagation();"><i class="fab fa-github"></i></a></li>
                     </ul>
                 </div>
                 <div class="person-card">
@@ -102,8 +151,6 @@
                     <p>Undergraduate Student</p>
                     <ul class="socials">
                         <li><a href="mailto:wj100@wellesley.edu" target="_blank" onclick="event.stopPropagation();"><i class="fas fa-envelope"></i></a></li>
-                        <li><a href="https://www.linkedin.com/in/iseewj/" target="_blank" onclick="event.stopPropagation();"><i class="fab fa-linkedin"></i></a></li>
-                        <li><a href="https://github.com/IseeJ" target="_blank" onclick="event.stopPropagation();"><i class="fab fa-github"></i></a></li>
                     </ul>
                 </div>
                 <div class="person-card">
@@ -112,8 +159,6 @@
                     <p>Undergraduate Student</p>
                     <ul class="socials">
                         <li><a href="mailto:wj100@wellesley.edu" target="_blank" onclick="event.stopPropagation();"><i class="fas fa-envelope"></i></a></li>
-                        <li><a href="https://www.linkedin.com/in/iseewj/" target="_blank" onclick="event.stopPropagation();"><i class="fab fa-linkedin"></i></a></li>
-                        <li><a href="https://github.com/IseeJ" target="_blank" onclick="event.stopPropagation();"><i class="fab fa-github"></i></a></li>
                     </ul>
                 </div>
                 <div class="person-card">
@@ -122,18 +167,29 @@
                     <p>Undergraduate Student</p>
                     <ul class="socials">
                         <li><a href="mailto:wj100@wellesley.edu" target="_blank" onclick="event.stopPropagation();"><i class="fas fa-envelope"></i></a></li>
+                    </ul>
+                </div>
+
+                <!--template-->
+                <!--div class="person-card">
+                    <img src="IMG/Team/user.PNG" onclick="showTab('isee-profile')">
+                    <h3>5</h3>
+                    <p>Undergraduate Student</p>
+                    <ul class="socials">
+                        <li><a href="mailto:wj100@wellesley.edu" target="_blank" onclick="event.stopPropagation();"><i class="fas fa-envelope"></i></a></li>
                         <li><a href="https://www.linkedin.com/in/iseewj/" target="_blank" onclick="event.stopPropagation();"><i class="fab fa-linkedin"></i></a></li>
                         <li><a href="https://github.com/IseeJ" target="_blank" onclick="event.stopPropagation();"><i class="fab fa-github"></i></a></li>
                     </ul>
-                </div>
+                </div-->
                 
             </div>
         </section>
+
         <!--profile pages-->
         <section id="james-profile" class="tab-content" style="display:none;">
             <span class="back-arrow" onclick="showTab('people')">&#8592; Back</span>
             <div class="p-container" style="background-color: #f9f9f9;">
-                <img src="user.PNG" alt="James Battat">
+                <img src="user.PNG" alt="prof">
                 <h2>James Battat</h2>
                 <p>Description</p>
             </div>
@@ -141,7 +197,7 @@
         <section id="wenzhao-profile" class="tab-content" style="display:none;">
             <span class="back-arrow" onclick="showTab('people')">&#8592; Back</span>
             <div class="p-container" style="background-color: #f9f9f9;">
-                <img src="user.PNG" alt="James Battat">
+                <img src="user.PNG"alt="prof">
                 <h2>Wenzhao Wei</h2>
                 <p>Description</p>
             </div>
@@ -149,7 +205,7 @@
         <section id="spencer-profile" class="tab-content" style="display:none;">
             <span class="back-arrow" onclick="showTab('people')">&#8592; Back</span>
             <div class="p-container" style="background-color: #f9f9f9;">
-                <img src="user.PNG" alt="James Battat">
+                <img src="user.PNG" alt="prof">
                 <h2>Spencer Dockal</h2>
                 <p>Description</p>
             </div>
@@ -157,7 +213,7 @@
         <section id="isee-profile" class="tab-content" style="display:none;">
             <span class="back-arrow" onclick="showTab('people')">&#8592; Back</span>
             <div class="p-container" style="background-color: #f9f9f9;">
-                <img src="user.PNG" alt="James Battat">
+                <img src="user.PNG" alt="prof">
                 <h2>I-see Warisa Jaidee</h2>
                 <p>Description</p>
             </div>
@@ -168,18 +224,22 @@
         <!-- Research Section -->
         <section id="research" class="tab-content" style="display:none;">
             <div class="p-container">
-                <h2>Q-Pix Consortium</h2>
+                <h2>Liquid Argon Purifier</h2>
+        
+
+                <div style="max-width: 100%; overflow: hidden; text-align: center;">
+                    <img src="IMG/Projects/Purifier.png" alt="Liquid Argon Purifier" style="width: 100%; max-width: 600px; height: auto; border-radius: 10px;" />
+                </div>
+        
                 <ul class="p-content">
-                    <a href="https://www.qpix.work/" target="_blank" rel="noopener noreferrer">
-                        Learn More
-                    </a>
                 </ul>  
             </div>
             <br>
             <div class="p-container">
-                <h2>Projects</h2>
+                <h2>Purity Monitor</h2>
+
                 <ul class="p-content">
-                    <!--a onclick="showTab('isee-profile')">hey</a-->
+                
                 </ul>  
             </div>
         </section>
@@ -225,7 +285,12 @@
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             showTab('research'); 
-        });
+            
+            /*Scrolling gallery*/
+            const track = document.querySelector('.slider-track');
+            const images = track.innerHTML;
+            track.innerHTML += images;
+            });
 
     function showTab(tabName) {
         event.preventDefault();
@@ -255,33 +320,6 @@
                 }
             });
         }
-
-        const gallery = document.querySelector('.scrolling-gallery');
-
-        gallery.addEventListener('mouseover', () => {
-            gallery.style.animationPlayState = 'paused';
-        });
-
-        gallery.addEventListener('mouseout', () => {
-            gallery.style.animationPlayState = 'running';
-        });
-
-        function openInNewTab(imageSrc) {
-            window.open(imageSrc, '_blank');
-        }
-
-        function pauseGif() {
-    document.getElementById('headerIcon').src = 'icon.png';
-}
-
-function playGif() {
-    document.getElementById('headerIcon').src = 'icon.gif';
-}
-
-function hitGif() {
-    document.getElementById('headerIcon').src = 'icon2.gif';
-}
-
 
 
 
