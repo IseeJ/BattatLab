@@ -434,7 +434,7 @@ section2 {
     color: var(--color1);
 }
 .p-container {
-max-width: 800px;
+max-width: 1000px;
 margin: auto; 
 padding: 20px; 
 background: var(--color6); 
