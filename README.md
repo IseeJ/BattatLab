@@ -1,3 +1,3 @@
 hello world
 
-[link](https://iseej.github.io/BattatLab/))
+[link](https://iseej.github.io/BattatLab/)
