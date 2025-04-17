@@ -716,6 +716,7 @@ header img {
     margin-right: 20px;
    /* border-radius: 10px;*/
     flex-shrink: 0;
+    transition: transform 0.4s ease;
   }
   
 
@@ -748,7 +749,6 @@ header img {
     font-size: 14px;
   }
   
-  /* Show tooltip on hover */
   .image-box:hover .tooltip {
     opacity: 1;
     visibility: visible;
