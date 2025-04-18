@@ -55,7 +55,7 @@ body {
 header {
     background-color: var(--color1);
     color: var(--color4);
-    padding: 11px;
+    padding:10px;
     text-align: center;
     position: relative;
 }
@@ -440,7 +440,7 @@ section2 {
 .p-container {
 max-width: 1500px;
 margin: auto; 
-padding: 15px; 
+padding: 5px; 
 background: var(--color0); 
 border-radius: 15px; 
 transition: transform 0.3s ease;
@@ -451,7 +451,7 @@ transition: transform 0.3s ease;
 .p-container2 {
     max-width: 1500px;
     margin: auto; 
-    padding: 15px; 
+    padding: 5px; 
     background: var(--color0); 
     border-radius: 15px; 
     transition: transform 0.3s ease;
@@ -481,7 +481,7 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
 margin: auto;
 text-align: left;
 line-height: 1.6;
-padding: 0 20px;
+padding: 0 5px;
 }
 
 .p-content p {
@@ -598,6 +598,12 @@ header img {
         align-items: center;
     }
 
+    .p-content {  
+        margin-left: 0px;
+        margin-right: 0px;
+        padding:0;
+        }
+    
     .me-content {
         max-width: 100%; 
     }
