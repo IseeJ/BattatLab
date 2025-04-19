@@ -30,6 +30,9 @@
         <section id="about" class="tab-content">
             <div class="p-container" style="background-color: var(--color0);">
                 <h2>Neutrino Detection and Particle Astrophysics</h2>
+                <div style="max-width: 100%; overflow: hidden; text-align: center;">
+                    <img src="IMG/About/nu.png" alt="neutrinos" style="width: 100%; max-width: 600px; height: auto; border-radius: 10px;" />
+                </div>
                 <ul class="p-content">
                     <p>     Our Universe is fascinating and mysterious. Through different lenses, we each try to make sense of it all. 
                         In our lab, we focus on particle astrophysics, and use (and develop new) experimental techniques to make precision measurements of neutrino properties. 
@@ -43,9 +46,6 @@
                         Neutrinos are electrically neutral, extremely light, and don’t interact much with other matter — kind of like cosmic ghosts. That’s why they’re so hard to detect, and we are still trying to uncover their secrets!
                    </p>
                  </ul>  
-                <div style="max-width: 100%; overflow: hidden; text-align: center;">
-                    <img src="IMG/About/nu.png" alt="neutrinos" style="width: 100%; max-width: 600px; height: auto; border-radius: 10px;" />
-                </div>
             </div>
             <br>
 
@@ -91,72 +91,24 @@
               </div>
               
             <br>
-            <div class="people-container">
-                <div class="person-card" onclick="showTab('james-profile')" style="background-color: var(--color7);">
+
+            <div class="people-container" style="display: flex; justify-content: center; align-items: center; gap: 3rem; border-radius: 10px;">
+                <div class="person-card" onclick="showTab('james-profile')" style="background-color: var(--color6);">
                     <img src="IMG/Team/user.PNG">
                     <h3>James Battat</h3>
-                    <p>Professor</p>
+                    <p>Professor of physics</p>
                     <ul class="socials">
                         <li><a href="mailto:wj100@wellesley.edu" target="_blank" onclick="event.stopPropagation();"><i class="fas fa-envelope"></i></a></li>
                     </ul>
                 </div>
-                <div class="person-card" onclick="showTab('wenzhao-profile')">
+                <div class="person-card" style="background-color: var(--color6);">
                     <img src="IMG/Team/user.PNG">
                     <h3>Wenzhao Wei</h3>
-                    <p>Researcher</p>
+                    <p>Research Scientist</p>
                     <ul class="socials">
                         <li><a href="mailto:wj100@wellesley.edu" target="_blank" onclick="event.stopPropagation();"><i class="fas fa-envelope"></i></a></li>
                     </ul>
                 </div>
-                <div class="person-card" onclick="showTab('spencer-profile')">
-                    <img src="IMG/Team/user.PNG">
-                    <h3>Spencer Dockal</h3>
-                    <p>Post Bac</p>
-                    <ul class="socials">
-                        <li><a href="mailto:wj100@wellesley.edu" target="_blank" onclick="event.stopPropagation();"><i class="fas fa-envelope"></i></a></li>
-                    </ul>
-                </div>
-                <div class="person-card">
-                    <img src="IMG/Team/user.PNG" onclick="showTab('isee-profile')">
-                    <h3>1</h3>
-                    <p>Class of 2025</p>
-                    <ul class="socials">
-                        <li><a href="mailto:wj100@wellesley.edu" target="_blank" onclick="event.stopPropagation();"><i class="fas fa-envelope"></i></a></li>
-                    </ul>
-                </div>
-                <div class="person-card">
-                    <img src="IMG/Team/user.PNG" onclick="showTab('isee-profile')">
-                    <h3>2</h3>
-                    <p>Class of 2027</p>
-                    <ul class="socials">
-                        <li><a href="mailto:wj100@wellesley.edu" target="_blank" onclick="event.stopPropagation();"><i class="fas fa-envelope"></i></a></li>
-                    </ul>
-                </div>
-                <div class="person-card">
-                    <img src="IMG/Team/user.PNG" onclick="showTab('isee-profile')">
-                    <h3>3</h3>
-                    <p>Undergraduate Student</p>
-                    <ul class="socials">
-                        <li><a href="mailto:wj100@wellesley.edu" target="_blank" onclick="event.stopPropagation();"><i class="fas fa-envelope"></i></a></li>
-                    </ul>
-                </div>
-                <div class="person-card">
-                    <img src="IMG/Team/user.PNG" onclick="showTab('isee-profile')">
-                    <h3>4</h3>
-                    <p>Undergraduate Student</p>
-                    <ul class="socials">
-                        <li><a href="mailto:wj100@wellesley.edu" target="_blank" onclick="event.stopPropagation();"><i class="fas fa-envelope"></i></a></li>
-                    </ul>
-                </div>
-                <div class="person-card">
-                    <img src="IMG/Team/user.PNG" onclick="showTab('isee-profile')">
-                    <h3>5</h3>
-                    <p>Undergraduate Student</p>
-                    <ul class="socials">
-                        <li><a href="mailto:wj100@wellesley.edu" target="_blank" onclick="event.stopPropagation();"><i class="fas fa-envelope"></i></a></li>
-                    </ul>
-                </div>
-
                 <!--template-->
                 <!--div class="person-card">
                     <img src="IMG/Team/user.PNG" onclick="showTab('isee-profile')">
@@ -167,9 +119,140 @@
                         <li><a href="https://www.linkedin.com/in/iseewj/" target="_blank" onclick="event.stopPropagation();"><i class="fab fa-linkedin"></i></a></li>
                         <li><a href="https://github.com/IseeJ" target="_blank" onclick="event.stopPropagation();"><i class="fab fa-github"></i></a></li>
                     </ul>
-                </div-->
+                </div--> 
                 
             </div>
+            <br>
+            <div class="collapsible-container active" id="2029">
+                <div class="collapsible-header" onclick="toggleCollapse('2029')">
+                  <span>2029</span>
+                  <span class="arrow">▼</span>
+                </div>
+                <div class="collapsible-content">
+                  <div class="people-container">
+                    <div class="person-card" onclick="showTab('james-profile')">
+                      <img src="IMG/Team/user.PNG">
+                      <h3>Piper Migden</h3>
+                      <ul class="socials">
+                        <li><a href="mailto:wj100@wellesley.edu" target="_blank" onclick="event.stopPropagation();"><i class="fas fa-envelope"></i></a></li>
+                      </ul>
+                    </div>
+                    <div class="person-card">
+                        <img src="IMG/Team/user.PNG">
+                        <h3>Name</h3>
+                        <ul class="socials">
+                            <li><a href="mailto:wj100@wellesley.edu" target="_blank" onclick="event.stopPropagation();"><i class="fas fa-envelope"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="person-card">
+                        <img src="IMG/Team/user.PNG">
+                        <h3>Name</h3>
+                        <ul class="socials">
+                            <li><a href="mailto:wj100@wellesley.edu" target="_blank" onclick="event.stopPropagation();"><i class="fas fa-envelope"></i></a></li>
+                        </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="collapsible-container active" id="2028">
+                  <div class="collapsible-header" onclick="toggleCollapse('2028')">
+                    <span>2028</span>
+                    <span class="arrow">▼</span>
+                  </div>
+                  <div class="collapsible-content">
+                    <div class="people-container">
+                      <div class="person-card" onclick="showTab('james-profile')">
+                        <img src="IMG/Team/user.PNG">
+                        <h3>Sunshine Lyons</h3>
+                        <ul class="socials">
+                          <li><a href="mailto:wj100@wellesley.edu" target="_blank" onclick="event.stopPropagation();"><i class="fas fa-envelope"></i></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              <div class="collapsible-container active" id="2027">
+                  <div class="collapsible-header" onclick="toggleCollapse('2027')">
+                    <span>2027</span>
+                    <span class="arrow">▼</span>
+                  </div>
+                  <div class="collapsible-content">
+                    <div class="people-container">
+                      <div class="person-card" onclick="showTab('james-profile')">
+                        <img src="IMG/Team/user.PNG">
+                        <h3>Ava Faubus</h3>
+                        <ul class="socials">
+                          <li><a href="mailto:wj100@wellesley.edu" target="_blank" onclick="event.stopPropagation();"><i class="fas fa-envelope"></i></a></li>
+                        </ul>
+                      </div>
+                      <div class="person-card">
+                          <img src="IMG/Team/user.PNG">
+                          <h3>Hanna Oh</h3>
+                          <ul class="socials">
+                              <li><a href="mailto:wj100@wellesley.edu" target="_blank" onclick="event.stopPropagation();"><i class="fas fa-envelope"></i></a></li>
+                          </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              <div class="collapsible-container active" id="2025">
+                  <div class="collapsible-header" onclick="toggleCollapse('2025')">
+                    <span>2025</span>
+                    <span class="arrow">▼</span>
+                  </div>
+                  <div class="collapsible-content">
+                    <div class="people-container">
+                        <div class="person-card">
+                            <img src="IMG/Team/user.PNG">
+                            <h3>I-see Jaidee</h3>
+                            <p>...</p>
+                            <ul class="socials">
+                                <li><a href="mailto:wj100@wellesley.edu" target="_blank" onclick="event.stopPropagation();"><i class="fas fa-envelope"></i></a></li>
+                                <li><a href="https://github.com/IseeJ" target="_blank" onclick="event.stopPropagation();"><i class="fab fa-github"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="person-card">
+                            <img src="IMG/Team/user.PNG">
+                            <h3>Cléo Nicollin</h3>
+                            <p>...</p>
+                            <ul class="socials">
+                                <li><a href="mailto:wj100@wellesley.edu" target="_blank" onclick="event.stopPropagation();"><i class="fas fa-envelope"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+
+
+    
+              
+              <!-- 2025 Section -->
+              <!--div class="collapsible-container" id="alumni-2025">
+                <div class="collapsible-header" onclick="toggleCollapse('alumni-2025')">
+                  <span>2025</span>
+                  <span class="arrow">▼</span>
+                </div>
+                <div class="collapsible-content">
+                  <div class="people-container">
+                    <div class="person-card">
+                      <img src="IMG/Team/user.PNG">
+                      <h3>I-see Jaidee</h3>
+                      <p>Class of 2025</p>
+                      <ul class="socials">
+                        <li><a href="mailto:wj100@wellesley.edu" target="_blank" onclick="event.stopPropagation();"><i class="fas fa-envelope"></i></a></li>
+                      </ul>
+                    </div>
+                    <div class="person-card">
+                        <img src="IMG/Team/user.PNG">
+                        <h3>Cléo Nicollin</h3>
+                        <p>Class of 2025</p>
+                        <ul class="socials">
+                            <li><a href="mailto:wj100@wellesley.edu" target="_blank" onclick="event.stopPropagation();"><i class="fas fa-envelope"></i></a></li>
+                        </ul>
+                    </div>
+                  </div>
+                </div>
+              </div-->
         </section>
 
         <!--profile pages-->
@@ -212,7 +295,7 @@
         <section id="research" class="tab-content" style="display:none;">
             <div class="project-container">
                 <div class="project-card" onclick="showTab('purifier')">
-                    <img src="IMG/Team/user.PNG">
+                    <img src="IMG/Projects/i2.PNG">
                     <h3>Purifier</h3>
                 </div>
                 <div class="project-card" onclick="showTab('puritymonitor')">
@@ -235,8 +318,14 @@
         <section id="purifier" class="tab-content" style="display:none;">
             <span class="back-arrow" onclick="showTab('research')">&#8592; Back</span>
             <div class="p-container2" style="background-color: #f9f9f9;">
-                <img src="IMG/Projects/i1.PNG" style="width:100px;">
+                <img src="IMG/Projects/i2.PNG" style="width:100px;">
                 <h2>Liquid Argon Purifier</h2>
+                <ul class="p-content" style="max-width: 850px;">
+                    <div class="p-content_block">
+                        <img src="IMG/Projects/1_1.png" class = "p-content_img"/>
+                    </div>
+                    <p>The purifier consists of </p>
+                </ul>
             </div>
         </section>
         <section id="puritymonitor" class="tab-content" style="display:none;">
@@ -406,8 +495,10 @@
         target.style.display = 'block';
       });
     });
-
-
+    function toggleCollapse(id) {
+    const section = document.getElementById(id);
+    section.classList.toggle('active');
+  }
 
     </script>
 </body>
