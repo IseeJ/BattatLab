@@ -735,7 +735,7 @@ header img {
 
 @media (max-width: 600px) {
     .people-container {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr); 
     }
     .project-container {
         grid-template-columns: repeat(2, 1fr); 
