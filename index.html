@@ -17,10 +17,10 @@
         <img src="IMG/Header.PNG"   class="header-icon" id="headerIcon" >
             <h1>Battat Lab</h1>
             <ul>
-                <li><a href="#about" onclick="showTab('about')">About</a></li>
-                <li><a href="#research" onclick="showTab('research')">Projects</a></li>
-                <li><a href="#people" onclick="showTab('people')">Our Team</a></li>
-                <li><a href="#photos" onclick="showTab('photos')">Gallery</a></li>
+                <li><a href="#about" onclick="showTab('about', event)">About</a></li>
+                <li><a href="#research" onclick="showTab('research', event)">Projects</a></li>
+                <li><a href="#people" onclick="showTab('people', event)">Our Team</a></li>
+                <li><a href="#photos" onclick="showTab('photos',event)">Gallery</a></li>
             </ul>
         </nav>
     </header>
@@ -399,11 +399,11 @@
             });
 
             function showTab(tabName, event) {
-    if (event) event.preventDefault(); // Prevent default if event exists
+                if (event) event.preventDefault(); // Prevent default if event exists
 
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+                window.scrollTo({ top: 0, behavior: 'smooth' });
 
-    const tabs = document.querySelectorAll('.tab-content');
+                const tabs = document.querySelectorAll('.tab-content');
     tabs.forEach(tab => {
         tab.style.display = 'none';
     });
