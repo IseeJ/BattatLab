@@ -638,7 +638,7 @@ header img {
 }
 
 .person-card {
-    background-color: none;
+    background-color: var(--color6);
     border: 1px solid var(--secondary-color);
     border-radius: 10px;
     /*box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);*/
@@ -721,7 +721,11 @@ header img {
     top: 60px;               
     left: 15px;             
 }
+.prof-page{
+    border-radius: 50%;     
+    width: 150px;            
 
+}
 
 
 @media (max-width: 1024px) {
@@ -867,3 +871,19 @@ header img {
   .collapsible-container.active .arrow {
     transform: rotate(180deg);
   }
+
+
+  /*Filter*/
+  .filter-bar {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#person-filter {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}

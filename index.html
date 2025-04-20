@@ -91,20 +91,82 @@
               </div>
               
             <br>
-
-            <div class="people-container" style="display: flex; justify-content: center; align-items: center; gap: 3rem; border-radius: 10px;">
-                <div class="person-card" onclick="showTab('james-profile')">
-                    <img src="IMG/Team/user.PNG">
+            <div class="filter-bar">
+                <label for="person-filter">Filter By: </label>
+                <select id="person-filter" onchange="filterPeople(this.value)">
+                    <option value="all">All</option>
+                    <option value="faculty">Faculty</option>
+                    <option value="postbac">Post Bac</option>
+                    <option value="2023">Class of 2023</option>
+                    <option value="2024">Class of 2024</option>
+                    <option value="2025">Class of 2025</option>
+                    <option value="2027">Class of 2027</option>
+                    <option value="2028">Class of 2028</option>
+                    <option value="2029">Class of 2029</option>
+                </select>
+            </div>
+            
+            <div class="people-container">
+                <div class="person-card faculty" onclick="showTab('james-profile')" style="background-color: var(--color7);">
+                    <img src="IMG/Team/james_battat_sq_0.jpg">
                     <h3>James Battat</h3>
                     <p>Professor of physics</p>
                     <ul class="socials">
                         <li><a href="mailto:wj100@wellesley.edu" target="_blank" onclick="event.stopPropagation();"><i class="fas fa-envelope"></i></a></li>
                     </ul>
                 </div>
-                <div class="person-card">
+                <div class="person-card faculty">
                     <img src="IMG/Team/user.PNG">
                     <h3>Wenzhao Wei</h3>
                     <p>Research Scientist</p>
+                    <ul class="socials">
+                        <li><a href="mailto:wj100@wellesley.edu" target="_blank" onclick="event.stopPropagation();"><i class="fas fa-envelope"></i></a></li>
+                    </ul>
+                </div>
+                <div class="person-card postbac 2024">
+                    <img src="IMG/Team/user.PNG">
+                    <h3>Spencer Dockal</h3>
+                    <p>Post Bac</p>
+                    <ul class="socials">
+                        <li><a href="mailto:wj100@wellesley.edu" target="_blank" onclick="event.stopPropagation();"><i class="fas fa-envelope"></i></a></li>
+                    </ul>
+                </div>
+                <div class="person-card 2025">
+                    <img src="IMG/Team/user.PNG">
+                    <h3>I-see Jaidee</h3>
+                    <p>Class of 2025</p>
+                    <ul class="socials">
+                        <li><a href="mailto:wj100@wellesley.edu" target="_blank" onclick="event.stopPropagation();"><i class="fas fa-envelope"></i></a></li>
+                    </ul>
+                </div>
+                <div class="person-card 2025">
+                    <img src="IMG/Team/user.PNG">
+                    <h3>Cléo Nicollin</h3>
+                    <p>Class of 2025</p>
+                    <ul class="socials">
+                        <li><a href="mailto:wj100@wellesley.edu" target="_blank" onclick="event.stopPropagation();"><i class="fas fa-envelope"></i></a></li>
+                    </ul>
+                </div>
+                <div class="person-card 2027">
+                    <img src="IMG/Team/user.PNG">
+                    <h3>Ava Faubus</h3>
+                    <p>Class of 2027</p>
+                    <ul class="socials">
+                        <li><a href="mailto:wj100@wellesley.edu" target="_blank" onclick="event.stopPropagation();"><i class="fas fa-envelope"></i></a></li>
+                    </ul>
+                </div>
+                <div class="person-card 2027">
+                    <img src="IMG/Team/user.PNG">
+                    <h3>Hannah Oh</h3>
+                    <p>Class of 2027</p>
+                    <ul class="socials">
+                        <li><a href="mailto:wj100@wellesley.edu" target="_blank" onclick="event.stopPropagation();"><i class="fas fa-envelope"></i></a></li>
+                    </ul>
+                </div>
+                <div class="person-card postbac 2023">
+                    <img src="IMG/Team/user.PNG">
+                    <h3>Nora Hoch</h3>
+                    <p>Post Bac</p>
                     <ul class="socials">
                         <li><a href="mailto:wj100@wellesley.edu" target="_blank" onclick="event.stopPropagation();"><i class="fas fa-envelope"></i></a></li>
                     </ul>
@@ -122,146 +184,39 @@
                 </div--> 
                 
             </div>
-            <br>
-            <div class="collapsible-container active" id="2029">
-                <div class="collapsible-header" onclick="toggleCollapse('2029')">
-                  <span>2029</span>
-                  <span class="arrow">▼</span>
-                </div>
-                <div class="collapsible-content">
-                  <div class="people-container">
-                    <div class="person-card" onclick="showTab('james-profile')">
-                      <img src="IMG/Team/user.PNG">
-                      <h3>Piper Migden</h3>
-                      <ul class="socials">
-                        <li><a href="mailto:wj100@wellesley.edu" target="_blank" onclick="event.stopPropagation();"><i class="fas fa-envelope"></i></a></li>
-                      </ul>
-                    </div>
-                    <div class="person-card">
-                        <img src="IMG/Team/user.PNG">
-                        <h3>Name</h3>
-                        <ul class="socials">
-                            <li><a href="mailto:wj100@wellesley.edu" target="_blank" onclick="event.stopPropagation();"><i class="fas fa-envelope"></i></a></li>
-                        </ul>
-                    </div>
-                    <div class="person-card">
-                        <img src="IMG/Team/user.PNG">
-                        <h3>Name</h3>
-                        <ul class="socials">
-                            <li><a href="mailto:wj100@wellesley.edu" target="_blank" onclick="event.stopPropagation();"><i class="fas fa-envelope"></i></a></li>
-                        </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="collapsible-container active" id="2028">
-                  <div class="collapsible-header" onclick="toggleCollapse('2028')">
-                    <span>2028</span>
-                    <span class="arrow">▼</span>
-                  </div>
-                  <div class="collapsible-content">
-                    <div class="people-container">
-                      <div class="person-card" onclick="showTab('james-profile')">
-                        <img src="IMG/Team/user.PNG">
-                        <h3>Sunshine Lyons</h3>
-                        <ul class="socials">
-                          <li><a href="mailto:wj100@wellesley.edu" target="_blank" onclick="event.stopPropagation();"><i class="fas fa-envelope"></i></a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              <div class="collapsible-container active" id="2027">
-                  <div class="collapsible-header" onclick="toggleCollapse('2027')">
-                    <span>2027</span>
-                    <span class="arrow">▼</span>
-                  </div>
-                  <div class="collapsible-content">
-                    <div class="people-container">
-                      <div class="person-card" onclick="showTab('james-profile')">
-                        <img src="IMG/Team/user.PNG">
-                        <h3>Ava Faubus</h3>
-                        <ul class="socials">
-                          <li><a href="mailto:wj100@wellesley.edu" target="_blank" onclick="event.stopPropagation();"><i class="fas fa-envelope"></i></a></li>
-                        </ul>
-                      </div>
-                      <div class="person-card">
-                          <img src="IMG/Team/user.PNG">
-                          <h3>Hanna Oh</h3>
-                          <ul class="socials">
-                              <li><a href="mailto:wj100@wellesley.edu" target="_blank" onclick="event.stopPropagation();"><i class="fas fa-envelope"></i></a></li>
-                          </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              <div class="collapsible-container active" id="2025">
-                  <div class="collapsible-header" onclick="toggleCollapse('2025')">
-                    <span>2025</span>
-                    <span class="arrow">▼</span>
-                  </div>
-                  <div class="collapsible-content">
-                    <div class="people-container">
-                        <div class="person-card">
-                            <img src="IMG/Team/user.PNG">
-                            <h3>I-see Jaidee</h3>
-                            <p>...</p>
-                            <ul class="socials">
-                                <li><a href="mailto:wj100@wellesley.edu" target="_blank" onclick="event.stopPropagation();"><i class="fas fa-envelope"></i></a></li>
-                                <li><a href="https://github.com/IseeJ" target="_blank" onclick="event.stopPropagation();"><i class="fab fa-github"></i></a></li>
-                            </ul>
-                        </div>
-                        <div class="person-card">
-                            <img src="IMG/Team/user.PNG">
-                            <h3>Cléo Nicollin</h3>
-                            <p>...</p>
-                            <ul class="socials">
-                                <li><a href="mailto:wj100@wellesley.edu" target="_blank" onclick="event.stopPropagation();"><i class="fas fa-envelope"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                  </div>
-                </div>
+            
 
 
-    
-              
-              <!-- 2025 Section -->
-              <!--div class="collapsible-container" id="alumni-2025">
-                <div class="collapsible-header" onclick="toggleCollapse('alumni-2025')">
-                  <span>2025</span>
-                  <span class="arrow">▼</span>
-                </div>
-                <div class="collapsible-content">
-                  <div class="people-container">
-                    <div class="person-card">
-                      <img src="IMG/Team/user.PNG">
-                      <h3>I-see Jaidee</h3>
-                      <p>Class of 2025</p>
-                      <ul class="socials">
-                        <li><a href="mailto:wj100@wellesley.edu" target="_blank" onclick="event.stopPropagation();"><i class="fas fa-envelope"></i></a></li>
-                      </ul>
-                    </div>
-                    <div class="person-card">
-                        <img src="IMG/Team/user.PNG">
-                        <h3>Cléo Nicollin</h3>
-                        <p>Class of 2025</p>
-                        <ul class="socials">
-                            <li><a href="mailto:wj100@wellesley.edu" target="_blank" onclick="event.stopPropagation();"><i class="fas fa-envelope"></i></a></li>
-                        </ul>
-                    </div>
-                  </div>
-                </div>
-              </div-->
         </section>
 
         <!--profile pages-->
         <section id="james-profile" class="tab-content" style="display:none;">
             <span class="back-arrow" onclick="showTab('people')">&#8592; Back</span>
-            <div class="p-container" style="background-color: #f9f9f9;">
-                <img src="user.PNG" alt="prof">
+            <div class="p-container2" style="background-color: #f9f9f9;">
+                <img src="IMG/Team/james_battat_sq_0.jpg" alt="prof" class="prof-page">
                 <h2>James Battat</h2>
-                <p>Description</p>
+                <div class="p-container" style="background-color: var(--color0);">
+                    <ul class="p-content" style="max-width: 850px;">
+                        <p>Experimental particle astrophysics including neutrino and dark matter detection; precision tests of gravity with lunar laser ranging.</p>
+                        <p>My experimental work addresses deep open questions in physics such as the origin of matter and the physics of gravity. I'm particularly motivated by opportunities to develop detector technologies that can open new windows of discovery in particle astrophysics.</p>
+                        <p>I collaborate with the <a href="Q-Pix consortium">Q-Pix consortium</a> to develop a <a href="https://arxiv.org/abs/1809.10213">novel 3D tracking readout system</a> for rare-event detection in large-scale detectors. In particular, our goal for Q-Pix is to enhance the sensitivity of the <a href="https://www.dunescience.org/">Deep Underground Neutrino Experiment (DUNE)</a> by providing true 3D tracking and millimeter spatial resolution in the "far detector." The DUNE far detector consists of multiple building-sized underground modules (each 18 x 19 x 66 m3 -- larger than the size of the E-Wing of our Science Center -- and filled with 10 kilotons of cryogenic liquid argon). Despite the enormous size, only a handful of neutrino interactions per day are expected. So the Q-Pix system will sit idle most of the time, but must respond efficiently and accurately when a rare event occurs. The challenge is significant, but the physics payoff is huge -- DUNE's science goals include understanding the physics of how neutrinos oscillate from one flavor to another and how they may play a role in the matter/anti-matter asymmetry in the Universe.</p>
+                        <p>In addition to particle detection, I work with the APOLLO collaboration (Apache Point Observatory Lunar Laser-ranging Operation) on tests of gravity using the Lunar Laser Ranging technique. We transmit 100-picosecond-long pulses of green laser light from the Apache Point Observatory 3.5m telescope in New Mexico to the moon. This light reflects off of Apollo-era corner cubes on the lunar surface. With our accurate clock and single-photon detectors, we are able to determine the Earth-Moon range with millimeter precision (a part in 1012 of the total distance). These measurements provide some of the most stringent empirical constraints on gravitational physics, including tests of the strong equivalence principle, the time-evolution of Newton's Constant G, the Newtonian 1/r2 force law, and gravitomagnetism.</p>
+                        <p>I teach courses across the physics curriculum, including PHYS 100 (Relativity and Quantum Physics), and Classical Mechanics (PHYS107 and 207). As an experimentalist, I enjoy guiding student exploration in PHYS 210 (Experimental Techniques) and PHYS 310 (Experimental Physics). I try to create learning spaces where students can practice and explore, stumble and rebound, grow and feel proud of their accomplishments. </p>
+                        <p>I find it hard to resist watching World Cup soccer games. I've done a rail slide on skis, but my wife kills me on bump runs. We have named our dogs after a candy bar and a delicious stout. I prefer crepes to pancakes, and used the batter to teach my kids algebra. I made a super-sized Jenga game for which hard-hats are recommended, and am always up for trying out a random DIY project from YouTube.</p></p>
+                    </ul>  
+                </div>   
+                <p>
+
+
+                    
+                    
+                   
+                    
+                   
+                    
+                 
+                    
+                   
             </div>
         </section>
         <section id="wenzhao-profile" class="tab-content" style="display:none;">
@@ -499,6 +454,16 @@
     const section = document.getElementById(id);
     section.classList.toggle('active');
   }
+  function filterPeople(category) {
+    const cards = document.querySelectorAll('.person-card');
+    cards.forEach(card => {
+        if (category === 'all') {
+            card.style.display = 'block';
+        } else {
+            card.style.display = card.classList.contains(category) ? 'block' : 'none';
+        }
+    });
+}
 
     </script>
 </body>
