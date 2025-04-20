@@ -107,7 +107,7 @@
             </div>
             
             <div class="people-container">
-                <div class="person-card faculty" onclick="showTab('james-profile')" style="background-color: var(--color7);">
+                <div class="person-card faculty" onclick="showTab('james-profile', event)" style="background-color: var(--color7);">
                     <img src="IMG/Team/james_battat_sq_0.jpg">
                     <h3>James Battat</h3>
                     <p>Professor of physics</p>
@@ -206,17 +206,7 @@
                     </ul>  
                 </div>   
                 <p>
-
-
-                    
-                    
-                   
-                    
-                   
-                    
-                 
-                    
-                   
+   
             </div>
         </section>
         <section id="wenzhao-profile" class="tab-content" style="display:none;">
@@ -408,24 +398,31 @@
             track.innerHTML += images;
             });
 
-    function showTab(tabName) {
-        event.preventDefault();
+            function showTab(tabName, event) {
+    if (event) event.preventDefault(); // Prevent default if event exists
 
-        const tabs = document.querySelectorAll('.tab-content');
-        tabs.forEach(tab => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+
+    const tabs = document.querySelectorAll('.tab-content');
+    tabs.forEach(tab => {
         tab.style.display = 'none';
-        });
+    });
 
-        const selectedTab = document.getElementById(tabName);
+    const selectedTab = document.getElementById(tabName);
+    if (selectedTab) {
         selectedTab.style.display = 'block';
+    }
 
-        const navLinks = document.querySelectorAll('nav a');
-        navLinks.forEach(link => {
-            link.classList.remove('active');
-        });
-        const activeLink = document.querySelector(`nav a[href="#${tabName}"]`);
+    const navLinks = document.querySelectorAll('nav a');
+    navLinks.forEach(link => {
+        link.classList.remove('active');
+    });
+
+    const activeLink = document.querySelector(`nav a[href="#${tabName}"]`);
+    if (activeLink) {
         activeLink.classList.add('active');
-        }
+    }
+}
 
         function highlightActiveTab(activeTab) {
             const links = document.querySelectorAll('nav a');
