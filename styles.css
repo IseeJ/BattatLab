@@ -642,11 +642,11 @@ header img {
 
 .person-card {
     background-color: var(--color6);
-    border: 1px solid var(--secondary-color);
     border-radius: 10px;
-    /*box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);*/
+    /*border: 1px solid var(--secondary-color);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);*/
     text-align: center;
-    padding: 5px;
+    padding: 10px;
     transition: transform 0.3s ease;
     
 }
@@ -670,8 +670,7 @@ header img {
     border-radius: 50%;
     width: 120px;
     height: 120px;
-    object-fit: cover;
-    margin-bottom: 10px;
+    object-fit: contain;
 }
 
 .project-card img {
@@ -734,8 +733,6 @@ header img {
 @media (max-width: 1024px) {
     .people-container {
         grid-template-columns: repeat(2, 1fr); 
-        padding: 10px;
-        margin: 5px;
     }
     .project-container {
         grid-template-columns: repeat(4, 1fr); 
