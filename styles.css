@@ -468,7 +468,7 @@ transition: transform 0.3s ease;
 
 .p-container img,.p-container2 img {
     width: 100%;
-    max-width: 350px;          
+    max-width: 200px;          
     height: auto;              
     display: block;          
     margin: 10px auto;     
