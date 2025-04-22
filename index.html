@@ -97,7 +97,7 @@
                     <option value="all">All</option>
                     <option value="faculty">Faculty</option>
                     <option value="postbac">Post Bac</option>
-                    <option value="current"selected>Current members</option>
+                    <option value="current" selected>Current members</option>
                     <option value="2022">Class of 2022</option>
                     <option value="2023">Class of 2023</option>
                     <option value="2024">Class of 2024</option>
@@ -516,6 +516,9 @@
     </footer>
 
     <script>
+        window.onload = function() {
+            filterPeople('current');
+        };
         document.addEventListener("DOMContentLoaded", function() {
             showTab('people'); 
             
