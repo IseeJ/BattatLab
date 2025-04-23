@@ -109,7 +109,7 @@ p {
     font-size: 16px;
 }
 
-a {
+a  {
     color: #843b62;
     text-decoration: none;
 }
@@ -499,14 +499,14 @@ text-align: left;
     text-align: left; 
 }
 
-.p-content a{
+.p-content a, span{
 color: var(--color2);
 text-decoration: none;
 font-weight: bold;
 
 }
 
-.p-content a:hover{
+.p-content a:hover, span:hover{
 color: var(--color1);
 text-decoration: none;
 
